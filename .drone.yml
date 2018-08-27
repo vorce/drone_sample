@@ -6,4 +6,4 @@ pipeline:
       - mix local.hex --force
       - mix local.rebar --force
       - yes | mix deps.get
-      - mix coveralls.drone
+      - MIX_ENV=test mix coveralls.drone
