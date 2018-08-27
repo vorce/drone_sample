@@ -7,7 +7,7 @@ Sample repository for elixir build on [Drone](https://drone.io).
 You will need to add a `coveralls_repo_token` secret to the drone project to be able to report coverage:
 
 ```bash
-DRONE_TOKEN=<your-drone-token>
-DRONE_SERVER=<your-drone-server-hostname>
+export DRONE_TOKEN=<your-drone-token>
+export DRONE_SERVER=<your-drone-server-hostname>
 drone secret add --repository=namespace/project --name=coveralls_repo_token --value=<coveralls-repo-token>
 ```
