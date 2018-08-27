@@ -23,7 +23,7 @@ defmodule DroneSample.MixProject do
   defp deps do
     [
       {:excoveralls,
-       git: "https://github.com/mkorszun/excoveralls.git", branch: "add-drone", only: :test}
+       git: "https://github.com/mkorszun/excoveralls.git", branch: "add-drone"}
     ]
   end
 end
