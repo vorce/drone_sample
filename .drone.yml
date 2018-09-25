@@ -6,10 +6,12 @@ pipeline:
       - mix local.hex --force
       - mix local.rebar --force
       - yes | mix deps.get
-  coveralls:
+      - mix test
+  coveralls-build:
     image: elixir:1.7-alpine
     secrets: [ coveralls_repo_token ]
     commands:
+      - mix local.hex --force
       - MIX_ENV=test mix coveralls.drone
     when:
       event: [push, tag, deployment] # Skip coverall report for PRs
