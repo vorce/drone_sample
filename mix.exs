@@ -22,8 +22,7 @@ defmodule DroneSample.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:excoveralls,
-       git: "https://github.com/mkorszun/excoveralls.git", branch: "add-drone"}
+      {:excoveralls, "~> 0.10.1"}
     ]
   end
 end
