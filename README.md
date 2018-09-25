@@ -1,6 +1,6 @@
 # DroneSample [![Build Status](https://drone.meltwater.io/api/badges/vorce/drone_sample/status.svg)](https://drone.meltwater.io/vorce/drone_sample) [![Coverage Status](https://coveralls.io/repos/github/vorce/drone_sample/badge.svg?branch=master)](https://coveralls.io/github/vorce/drone_sample?branch=master)
 
-Sample repository for elixir build on [Drone](https://drone.io).
+Sample repository for elixir build on [Drone](https://drone.io) with [excoveralls](https://github.com/parroty/excoveralls).
 
 ## Instructions
 
