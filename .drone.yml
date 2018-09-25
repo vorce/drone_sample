@@ -1,10 +1,15 @@
 pipeline:
   build:
     image: elixir:1.7-alpine
-    secrets: [ coveralls_repo_token ]
     commands:
       - apk add -qU git
       - mix local.hex --force
       - mix local.rebar --force
       - yes | mix deps.get
+  coveralls:
+    image: elixir:1.7-alpine
+    secrets: [ coveralls_repo_token ]
+    commands:
       - MIX_ENV=test mix coveralls.drone
+    when:
+      event: [push, tag, deployment] # Skip coverall report for PRs
