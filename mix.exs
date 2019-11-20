@@ -22,7 +22,7 @@ defmodule DroneSample.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:excoveralls, "~> 0.11.1"}
+      {:excoveralls, "~> 0.12.0"}
     ]
   end
 end
